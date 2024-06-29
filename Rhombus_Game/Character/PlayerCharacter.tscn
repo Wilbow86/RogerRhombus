@@ -1,11 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://n2pq8gc4kxqk"]
+[gd_scene load_steps=4 format=3 uid="uid://n2pq8gc4kxqk"]
 
+[ext_resource type="Script" path="res://Character/CharacterMovement.gd" id="1_mqwg1"]
 [ext_resource type="Texture2D" uid="uid://6lu2leshros6" path="res://art/Donny.png" id="1_nrv7r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_da1wk"]
 size = Vector2(154.833, 151.26)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+rotation = 1.5708
+script = ExtResource("1_mqwg1")
+metadata/DashDir = Vector2(0, 0)
+metadata/DashTime = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_nrv7r")
