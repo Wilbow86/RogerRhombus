@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://n2pq8gc4kxqk"]
+
+[ext_resource type="Texture2D" uid="uid://6lu2leshros6" path="res://art/Donny.png" id="1_nrv7r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_da1wk"]
+size = Vector2(154.833, 151.26)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nrv7r")
+centered = false
+offset = Vector2(-679, -263)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+rotation = 2.07171
+scale = Vector2(0.98, 0.98)
+skew = 0.544543
+shape = SubResource("RectangleShape2D_da1wk")
