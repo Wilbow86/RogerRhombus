@@ -1,3 +1,20 @@
-[gd_scene format=3 uid="uid://lrainu2w6pkf"]
+[gd_scene load_steps=3 format=3 uid="uid://lrainu2w6pkf"]
 
-[node name="Node2D4" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://n2pq8gc4kxqk" path="res://Character/PlayerCharacter.tscn" id="1_w7yvb"]
+[ext_resource type="Texture2D" uid="uid://cq23y4vwiqjsj" path="res://art/tempBackground.png" id="2_egmje"]
+
+[node name="Game_Level" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_w7yvb")]
+z_index = 2
+position = Vector2(504, 194)
+scale = Vector2(0.15, 0.2)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+process_callback = 0
+position_smoothing_enabled = true
+
+[node name="TempBackground" type="Sprite2D" parent="."]
+position = Vector2(-45, -35)
+scale = Vector2(1.72924, 1.72924)
+texture = ExtResource("2_egmje")
