@@ -21,9 +21,9 @@ func _physics_process(delta):
 	
 	
 	#rotation
-	look_at(get_global_mouse_position() )
-	rotate(1.57079633) #this is pi/2 radians.  hard-coded because the diamond needs to be facing mouse cursor + 90 degrees
-	
+	if(get_meta("RotationLock")):
+		look_at(get_global_mouse_position() )
+		rotate(1.57079633) #this is pi/2 radians.  hard-coded because the diamond needs to be facing mouse cursor + 90 degrees
 	#WASD
 	var kickstartMultiplier = 1.0
 	var spdToUse = SPEED
