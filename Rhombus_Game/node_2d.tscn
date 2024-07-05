@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://lrainu2w6pkf"]
+[gd_scene load_steps=4 format=3 uid="uid://lrainu2w6pkf"]
 
 [ext_resource type="PackedScene" uid="uid://n2pq8gc4kxqk" path="res://Character/PlayerCharacter.tscn" id="1_w7yvb"]
 [ext_resource type="Texture2D" uid="uid://cq23y4vwiqjsj" path="res://art/tempBackground.png" id="2_egmje"]
+[ext_resource type="PackedScene" uid="uid://dfjyna1l3bbon" path="res://enemy_body_2d.tscn" id="3_ubj4i"]
 
 [node name="Game_Level" type="Node2D"]
 
@@ -18,3 +19,6 @@ position_smoothing_enabled = true
 position = Vector2(-45, -35)
 scale = Vector2(1.72924, 1.72924)
 texture = ExtResource("2_egmje")
+
+[node name="enemyBody2D" parent="." instance=ExtResource("3_ubj4i")]
+position = Vector2(-394, -76)

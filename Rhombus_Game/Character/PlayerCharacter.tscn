@@ -8,6 +8,7 @@ size = Vector2(154.833, 151.26)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 rotation = 1.5708
+collision_layer = 3
 script = ExtResource("1_mqwg1")
 metadata/DashDir = Vector2(0, 0)
 metadata/DashTime = 0
